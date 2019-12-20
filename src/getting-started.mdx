@@ -1,0 +1,69 @@
+---
+
+name: Getting Started
+route: /getting-started
+
+---
+
+# Getting Started
+
+## installation
+
+install `cb-react-modal` with npm:
+`npm i cb-react-modal`
+
+## Basic usage
+
+**Call the `openModal` function**
+
+Invoke the `openModal` function to spawn a modal as depicted below:
+
+```jsx
+import React, { Component } from "react";
+import { openModal } from "cb-react-modal";
+import "cb-react-modal/dist/modalStyle.css";
+
+class Example extends Component {
+  openModal = () => {
+    openModal({
+      header: () => (
+        /* component or string to render header */
+      ),
+      body: () => (
+        /* component or string to render body */
+      ),
+      footer: () => (
+        /* component or string to render footer */
+      ),
+      styles: () => (
+        /* style object to add custom styles to the container (Optional)*/
+      ),
+      clsName: () => (
+        /* A custom class for the modal container (Optional)*/
+      ),
+      closeOnEscape: () => (
+        /* Setting true closes the modal on pressing escape key setting false does the opposite (Optional)*/
+      )
+    });
+  };
+  render() {
+    return <button onClick={this.openModal}>Open Modal</button>;
+  }
+}
+```
+The modal will be mounted for you. The modal has a default animation.
+Setting an class can help in styling the modal.
+By default closeOnEscape is set to true.
+Pass additional styles to create a modal that suits your needs.
+
+## Demo
+
+A basic modal with all the options provided:
+
+<iframe
+     src="https://codesandbox.io/embed/gracious-ride-6qk5y?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="gracious-ride-6qk5y"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
