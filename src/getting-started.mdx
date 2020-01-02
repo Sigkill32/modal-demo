@@ -35,15 +35,16 @@ class Example extends Component {
       footer: () => (
         /* component or string to render footer */
       ),
-      styles: () => (
-        /* style object to add custom styles to the container (Optional)*/
-      ),
-      clsName: () => (
-        /* A custom class for the modal container (Optional)*/
-      ),
-      closeOnEscape: () => (
-        /* Setting true closes the modal on pressing escape key setting false does the opposite (Optional)*/
-      )
+
+      classNames: { overlay: className for overlay, modal: className for the modal, closeIcon: className for close icon},
+
+      closeOnEscape: /* Setting true closes the modal on pressing escape key setting false does the opposite (Optional)*/,
+
+      closeIcon: { src: icon object, alt: alt text for the icon},
+
+      animation: { name: choose from bounce, fade-in and zoom animation, duration: animation duration},
+
+      containerId: /* Id of the custom container over which you would like the modal to be mouted */
     });
   };
   render() {
