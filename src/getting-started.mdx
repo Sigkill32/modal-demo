@@ -67,3 +67,16 @@ A basic modal with all the options provided:
      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
+
+## Props
+
+| Name          | Type                                                        | Default |
+|---------------|-------------------------------------------------------------|---------|
+| head          | `func` / `string`                                           |         |
+| body          | `func` / `string`                                           |         |
+| footer        | `func` / `string`                                           |         |
+| classNames    | { overlay: `string`, modal: `string`, closeIcon: `string` } |         |
+| closeOnEscape | `bool`                                                      | `true`  |
+| closeIcon     | { src: `string` alt: `string` }                             |         |
+| animation     | { name: `string` duration: `string` }                       |         |
+| containerId   | `number`                                                    |         |
