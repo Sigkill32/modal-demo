@@ -1,0 +1,103 @@
+---
+
+name: Examples
+route: /examples
+
+---
+
+
+# Basic Modal
+The demo below shows how to spawn a basic modal using the `openModal` function.
+
+<iframe
+     src="https://codesandbox.io/embed/gracious-ride-6qk5y?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="gracious-ride-6qk5y"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+
+# Component Mode
+
+You may spawn a modal by directly mounting the `Modal` component. You'll have to pass 2 additional props namely `open` and `onClose`. The example below depicts a simple usage of this feature.
+
+<iframe
+     src="https://codesandbox.io/embed/component-mode-xqpc9?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="Component mode"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+
+# Custom Animation
+
+Don't like the the default fade-in animation ? No Problem! customize how your modal animates by choosing one among 'fade-in', 'bounce' and 'zoom-n' animation.
+
+>**Note:** You can also add your own custom animation by passing custom classNames to the modal. <a href="/examples/custom-classNames">read more</a>
+
+<iframe
+     src="https://codesandbox.io/embed/romantic-field-7q4uj?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="romantic-field-7q4uj"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+
+
+# Modal with custom classNames
+
+Provide custom classNames to parts of your modal. Provide custom classNames to the overlay, modal and close icon.
+
+>**Note:** Use class names other than 'modal-overlay' for overlay and 'modal-content' for modal to avoid conflicts with existing classNames.
+
+
+
+<iframe
+     src="https://codesandbox.io/embed/focused-brattain-ycf95?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="focused-brattain-ycf95"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+
+# Mount modals on a custom container
+
+The body serves as the default container for all the modals. You can choose to mount your modal on a container of your choosing by providing the container id.
+
+<iframe
+     src="https://codesandbox.io/embed/brave-ganguly-pql7t?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="cb-react-modal custom container"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+
+# Close on Escape
+
+Control the modal's closing conditions by passing a boolean value for `closeOnEscape`
+
+<iframe
+     src="https://codesandbox.io/embed/great-joliot-we124?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="great-joliot-we124"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+# Nested Modal
+
+The library gives you the flexibility to spawn modals inside modals. The demo below depicts the same.
+
+<iframe
+     src="https://codesandbox.io/embed/nested-modal-demo-h9571?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="Nested Modal demo"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
