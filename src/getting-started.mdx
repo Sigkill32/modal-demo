@@ -5,6 +5,8 @@ route: /getting-started
 
 ---
 
+import Props from "./props.js";
+
 # Getting Started
 
 ## Installation
@@ -75,13 +77,4 @@ A basic modal with all the options provided:
 
 ## Props
 
-| Name          | Type                                                        | Default |
-| ------------- |:-----------------------------------------------------------:|:-------:|
-| head          | `func` / `string`                                           |         |
-| body          | `func` / `string`                                           |         |
-| footer        | `func` / `string`                                           |         |
-| classNames    | { overlay: `string`, modal: `string`, closeIcon: `string` } |         |
-| closeOnEscape | `bool`                                                      | `true`  |
-| closeIcon     | { src: `string` alt: `string` }                             |         |
-| animation     | { name: `string` duration: `string` }                       |         |
-| containerId   | `number`                                                    |         |
+<Props />
