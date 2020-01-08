@@ -1,5 +1,5 @@
 import React from "react";
-import './props.css';
+import "./props.css";
 const Props = () => {
   return (
     <table>
@@ -41,10 +41,15 @@ const Props = () => {
       <tr>
         <td>animation</td>
         <td>{"{ name: string duration: string }"}</td>
-        <td></td>
+        <td>{"{ name: 'fade-in', duration: '500ms' }"}</td>
       </tr>
       <tr>
         <td>containerId</td>
+        <td>number</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>modalId</td>
         <td>number</td>
         <td></td>
       </tr>
