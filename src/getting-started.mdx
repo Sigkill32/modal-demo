@@ -6,6 +6,7 @@ route: /getting-started
 ---
 
 import Props from "./props.js";
+import ComponentModeProps from './componentModeProps'
 
 # Getting Started
 
@@ -64,6 +65,21 @@ Pass additional styles to create a modal that suits your needs.
 
 You may additionally choose to spawn a modal by directly mounting the `Modal` component. You may use all the properties used in the object passed to the `openModal` function. But this option may prove impractical for implementing nested modals.
 
+**close a modal using `closeModal` method**
+
+You may close a modal by using the polymorphic method, `closeModal`. Calling the close method without arguments will close the current modal. You may also pass modalIDs to close the modals that correspond to those ids.
+```jsx
+import { modalClose } from 'cb-react-modal';
+```
+usage
+```jsx
+closeModal(id0, id1, id2, ....) // this function call will close all the ids passed to it
+```
+
+```jsx
+closeModal() // This function will close only the current modal.
+```
+
 ## Demo
 
 A basic modal with all the options provided:
@@ -77,6 +93,11 @@ A basic modal with all the options provided:
    ></iframe>
 
 
-## Props
+## Options that can be passed to `openModal`
 
 <Props />
+
+## Props to be passed to while using component mode
+You may pass all the options in that can be passed to `openModal` as props to component mode. Additionally you also need to pass `open` and `onClose` props to that control modal's opening. 
+
+<ComponentModeProps />

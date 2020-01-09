@@ -1,0 +1,75 @@
+---
+
+name: Deep Dive
+route: /deep-dive
+
+---
+
+# Deep Dive
+
+## The two modes of the library
+
+The library provides 2 options to create modals.
+
+- **Function Mode**
+- **Component Mode**
+
+## Function mode
+
+Function mode lets you create modals by using the `openModal` function. Refer the examples sections to get better insights on how to use the library in your react app.
+
+### Usage
+
+**Importing the function**
+
+```jsx
+import { openModal } from 'cb-react-modal';
+```
+
+**Function syntax**
+```jsx
+openModal({ options }) // options refer to all the various options that can be passed to the modal to be crated
+```
+
+Function mode allows you to create nested modals. Spawning a modal inside a modal with `cb-react-modal` is a piece of cake. As you don't need to worry about managing states it is extremely practical to use function mode to spawn nested modals.
+
+
+## Component Mode
+
+Component Mode lets you create modals by mounting the `Modal` component. Refer example section to get better insights on the usage.
+
+### Usage
+
+**Importing the component**
+```jsx
+import { Modal } from 'cb-react-modal';
+```
+
+```jsx
+<Modal open={this.state.open} onClose={this.handleClose} {...restOfTheOptions}/>
+```
+`onClose` is fired when the modal is closed. Which is used to change the state of open. The open prop will determine if the modal remains open or closed.
+
+You may mix component mode as well as function mode to create modals.
+
+## The `closeModal` method
+
+`closeModal` polymorphic method is used to close one or more modals. The method takes flexible number of ids which refer to the ids of the modals that you would like to close. Calling the method with no arguments will close the current modal. Refer the example section to get better insights.
+
+### usage
+
+**Importing the function**
+
+```jsx
+import { closeModal } from 'cb-react-modal';
+```
+
+**Syntax**
+
+```jsx
+closeModal(id0, id1, id2, ....) // this function call will close all the ids passed to it
+```
+
+```jsx
+closeModal() // This function will close only the current modal.
+```
