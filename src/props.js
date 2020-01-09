@@ -63,6 +63,12 @@ const Props = () => {
         <td></td>
         <td>Defines the modal container</td>
       </tr>
+      <tr>
+        <td>disableOverlayClick</td>
+        <td>bool</td>
+        <td>false</td>
+        <td>Defines modal's closing condition on clicking overlay</td>
+      </tr>
     </table>
   );
 };

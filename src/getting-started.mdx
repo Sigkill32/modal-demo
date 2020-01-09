@@ -12,7 +12,7 @@ import ComponentModeProps from './componentModeProps'
 
 ## Installation
 
-`npm i cb-react-modal`
+`npm i react-stateless-modal`
 
 ## Basic usage
 
@@ -22,8 +22,8 @@ Invoke the `openModal` function to spawn a modal as depicted below:
 
 ```jsx
 import React, { Component } from "react";
-import { openModal } from "cb-react-modal";
-import "cb-react-modal/dist/modalStyle.css";
+import { openModal } from "react-stateless-modal";
+import "react-stateless-modal/dist/modalStyle.css";
 
 class Example extends Component {
   openModal = () => {
@@ -49,6 +49,8 @@ class Example extends Component {
       containerId: /* Id of the custom container over which you would like the modal to be mounted */,
 
       modalId: /* specify the id of your choice that the modal will take */
+
+      disableOverlayClick: /* setting true prevents the modal from closing when overlay is clicked */
     });
   };
   render() {
@@ -69,7 +71,7 @@ You may additionally choose to spawn a modal by directly mounting the `Modal` co
 
 You may close a modal by using the polymorphic method, `closeModal`. Calling the close method without arguments will close the current modal. You may also pass modalIDs to close the modals that correspond to those ids.
 ```jsx
-import { modalClose } from 'cb-react-modal';
+import { modalClose } from 'react-stateless-modal';
 ```
 usage
 ```jsx
