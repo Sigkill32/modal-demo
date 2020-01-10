@@ -59,8 +59,8 @@ class Example extends Component {
 }
 ```
 The modal will be mounted for you. The modal has a default animation.
-Setting an class can help in styling the modal.
-By default closeOnEscape is set to true.
+Setting a class can help in styling the modal.
+By default `closeOnEscape` and `disableOverlayClick` is set to `true` and `false` respectively.
 Pass additional styles to create a modal that suits your needs.
 
 **Mount `Modal` using component mode**
@@ -69,7 +69,7 @@ You may additionally choose to spawn a modal by directly mounting the `Modal` co
 
 **close a modal using `closeModal` method**
 
-You may close a modal by using the polymorphic method, `closeModal`. Calling the close method without arguments will close the current modal. You may also pass modalIDs to close the modals that correspond to those ids.
+You may close a modal by using the polymorphic method, `closeModal`. Calling the close method without arguments will close the current modal. You may also pass modal Ids to close the modals that correspond to those ids.
 ```jsx
 import { modalClose } from 'react-stateless-modal';
 ```
